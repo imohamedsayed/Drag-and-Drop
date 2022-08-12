@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(cornflowerblue, aqua);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.up {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down {
+  width: 100%;
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.inputBox {
+  width: 30%;
+  height: 30%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.inputBox input {
+  width: 80%;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+
+  transition: all 0.3s ease;
+}
+.inputBox button {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.inputBox button:hover,
+.inputBox input:focus {
+  transform: scale(1.05);
+}
+
+.down .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.down .box:hover {
+  background-color: green;
+}
+.down .box h1 {
+  width: 100%;
+  padding: 10px;
+  border-top: 10px;
+  color: black;
+}
+.down .box p {
+  width: 80%;
+  padding: 10px;
+  margin: 2px 0;
+  background-color: violet;
+  color: black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  cursor: move;
+  word-wrap: break-word;
+}
+.down .box p:hover {
+  transform: scale(1.05);
+}
